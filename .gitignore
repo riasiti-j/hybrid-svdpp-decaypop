@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Raw and processed data
+data/
+processed/
+
+# Large experiment outputs
+results/hybrid/
+results/svdpp/fold*/model.pkl
+results/svdpp/fold*/top20_unseen.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+dokumentasifile.md

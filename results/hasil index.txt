@@ -1,0 +1,214 @@
+PS C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project> & C:\Users\riacl\AppData\Local\Programs\Python\Python313\python.exe "c:/Users/riacl/Documents/Daily Goals/Semester 3/New Experiment/Clean Project/index.py"
+
+======================================================================
+>>> 1. build_folds.py
+======================================================================
+Setelah filter: 97953 baris, 943 user, 1152 movie
+Fold 0: train_inner= 75502 val_inner=  8841 (3381 outlier dibuang dari train), test_norm= 10229 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold0
+Fold 1: train_inner= 75650 val_inner=  8852 (3318 outlier dibuang dari train), test_norm= 10133 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold1
+Fold 2: train_inner= 75713 val_inner=  8857 (3364 outlier dibuang dari train), test_norm= 10019 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold2
+Fold 3: train_inner= 75815 val_inner=  8871 (3350 outlier dibuang dari train), test_norm=  9917 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold3
+Fold 4: train_inner= 76030 val_inner=  8897 (3195 outlier dibuang dari train), test_norm=  9831 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold4
+Fold 5: train_inner= 75966 val_inner=  8889 (3354 outlier dibuang dari train), test_norm=  9744 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold5
+Fold 6: train_inner= 76070 val_inner=  8899 (3333 outlier dibuang dari train), test_norm=  9651 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold6
+Fold 7: train_inner= 76049 val_inner=  8906 (3442 outlier dibuang dari train), test_norm=  9556 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold7
+Fold 8: train_inner= 76274 val_inner=  8925 (3275 outlier dibuang dari train), test_norm=  9479 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold8
+Fold 9: train_inner= 76233 val_inner=  8921 (3405 outlier dibuang dari train), test_norm=  9394 -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold9
+
+Selesai. Ringkasan: C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\fold_summary.csv
+Manifest: C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\processed\cv10\manifest.json
+--- 1. build_folds.py selesai (8.3s) ---
+
+======================================================================
+>>> 1a. tune_svdpp.py
+======================================================================
+Tuning pakai 3 fold (train_inner/val_inner): [0, 1, 2]
+Trial  1/20 | RMSE=0.8942 | Best=0.8942 | {'d': 20, 'alpha': 0.0018410729205738682, 'lambda': 0.015957084694148364, 'decay': 0.8110358863119579}
+Trial  2/20 | RMSE=0.8572 | Best=0.8572 | {'d': 10, 'alpha': 0.044447541666908126, 'lambda': 0.12106896936002161, 'decay': 0.8403444310288725}
+Trial  3/20 | RMSE=0.8609 | Best=0.8572 | {'d': 50, 'alpha': 0.005418282319533243, 'lambda': 0.023927528765580644, 'decay': 0.9162520499972521}
+Trial  4/20 | RMSE=0.8407 | Best=0.8407 | {'d': 50, 'alpha': 0.02157696745589683, 'lambda': 0.018187859051288217, 'decay': 0.8977045432985862}
+Trial  5/20 | RMSE=0.8878 | Best=0.8407 | {'d': 30, 'alpha': 0.0012897950480855534, 'lambda': 0.17160445029754812, 'decay': 0.9834700862841663}
+Trial  6/20 | RMSE=0.8582 | Best=0.8407 | {'d': 10, 'alpha': 0.005595074635794793, 'lambda': 0.014413697528610409, 'decay': 0.8940836129211414}
+Trial  7/20 | RMSE=0.8661 | Best=0.8407 | {'d': 20, 'alpha': 0.003385226783451979, 'lambda': 0.04749239763680407, 'decay': 0.9038749530752231}
+Trial  8/20 | RMSE=0.8403 | Best=0.8403 | {'d': 20, 'alpha': 0.03313483615508949, 'lambda': 0.059963338824126605, 'decay': 0.9751561046543922}
+Trial  9/20 | RMSE=0.8576 | Best=0.8403 | {'d': 50, 'alpha': 0.004574578205475401, 'lambda': 0.022544116997360492, 'decay': 0.9574601267388666}
+Trial 10/20 | RMSE=0.8397 | Best=0.8397 | {'d': 30, 'alpha': 0.02306261812167794, 'lambda': 0.012502377950801122, 'decay': 0.9875085179540983}
+Trial 11/20 | RMSE=0.8450 | Best=0.8397 | {'d': 30, 'alpha': 0.014519832365831317, 'lambda': 0.010228672856993973, 'decay': 0.9417751509382782}
+Trial 12/20 | RMSE=0.8379 | Best=0.8379 | {'d': 20, 'alpha': 0.03484137301494824, 'lambda': 0.05152427196624267, 'decay': 0.9863685095248714}
+Trial 13/20 | RMSE=0.8532 | Best=0.8379 | {'d': 30, 'alpha': 0.012406481461496666, 'lambda': 0.07092783143792641, 'decay': 0.9417855825925936}
+Trial 14/20 | RMSE=0.8383 | Best=0.8379 | {'d': 20, 'alpha': 0.02503388074453252, 'lambda': 0.030868081828490906, 'decay': 0.9837668016979505}
+Trial 15/20 | RMSE=0.8541 | Best=0.8379 | {'d': 20, 'alpha': 0.010759095703764345, 'lambda': 0.03249586470295457, 'decay': 0.858518262731743}
+Trial 16/20 | RMSE=0.8361 | Best=0.8361 | {'d': 20, 'alpha': 0.04982585117992919, 'lambda': 0.03956664961391472, 'decay': 0.9583411903931603}
+Trial 17/20 | RMSE=0.8433 | Best=0.8361 | {'d': 20, 'alpha': 0.0490248956539397, 'lambda': 0.10099585334168895, 'decay': 0.9331142850088681}
+Trial 18/20 | RMSE=0.8376 | Best=0.8361 | {'d': 20, 'alpha': 0.03157726464072003, 'lambda': 0.04187274131689276, 'decay': 0.9578502484883265}
+Trial 19/20 | RMSE=0.8532 | Best=0.8361 | {'d': 20, 'alpha': 0.008785451478836291, 'lambda': 0.035464387433635884, 'decay': 0.9606803383483087}
+Trial 20/20 | RMSE=0.8535 | Best=0.8361 | {'d': 10, 'alpha': 0.016782415173421848, 'lambda': 0.0829926376394724, 'decay': 0.8709190852128799}
+
+Selesai. Trials selesai: 20
+Best RMSE (rata-rata 3 fold): 0.8361
+Best params: {'d': 20, 'alpha': 0.04982585117992919, 'lambda': 0.03956664961391472, 'decay': 0.9583411903931603}
+-> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\svdpp_tuning\best_hyperparams.json
+--- 1a. tune_svdpp.py selesai (5571.3s) ---
+
+======================================================================
+>>> 2a. train_svdpp.py
+======================================================================
+Pakai hyperparameter hasil tuning (C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\svdpp_tuning\best_hyperparams.json): {'d': 20, 'alpha': 0.04982585117992919, 'lambda': 0.03956664961391472, 'decay': 0.9583411903931603}
+Fold 0: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 1: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 2: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 3: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 4: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 5: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 6: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 7: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 8: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+Fold 9: sudah selesai (model.pkl + top20_unseen.csv ada) -> skip
+
+Selesai. Ringkasan RMSE: C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\svdpp\rmse_summary.csv
+--- 2a. train_svdpp.py selesai (1.6s) ---
+
+======================================================================
+>>> 2b. train_decaypop.py
+======================================================================
+Fold 0: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold0
+Fold 1: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold1
+Fold 2: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold2
+Fold 3: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold3
+Fold 4: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold4
+Fold 5: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold5
+Fold 6: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold6
+Fold 7: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold7
+Fold 8: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold8
+Fold 9: 1152 item punya pop_score, top-20 tersimpan -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\fold9
+
+Selesai. decaypop_normalized.csv: 1152 item -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\decaypop\decaypop_normalized.csv
+--- 2b. train_decaypop.py selesai (3.2s) ---
+
+======================================================================
+>>> 3. generate_hybrid_predictions.py
+======================================================================
+Fold 0: full-catalog 943 user x 10 rasio selesai
+Fold 1: full-catalog 943 user x 10 rasio selesai
+Fold 2: full-catalog 943 user x 10 rasio selesai
+Fold 3: full-catalog 943 user x 10 rasio selesai
+Fold 4: full-catalog 943 user x 10 rasio selesai
+Fold 5: full-catalog 943 user x 10 rasio selesai
+Fold 6: full-catalog 943 user x 10 rasio selesai
+Fold 7: full-catalog 943 user x 10 rasio selesai
+Fold 8: full-catalog 943 user x 10 rasio selesai
+Fold 9: full-catalog 943 user x 10 rasio selesai
+
+Selesai. 943000 baris -> predictions_fullcatalog.csv
+Selesai. 1868110 baris -> predictions_testonly.csv
+--- 3. generate_hybrid_predictions.py selesai (35.0s) ---
+
+======================================================================
+>>> 4. compute_metrics.py
+======================================================================
+=== Full-catalog: ranking rasio by ndcg_mean ===
+   ratio  precision_mean  ndcg_mean
+   10_90        0.058258   0.086577
+   20_80        0.056889   0.083203
+   30_70        0.055394   0.080636
+   40_60        0.054157   0.078594
+   50_50        0.052767   0.076335
+   60_40        0.050852   0.073760
+   70_30        0.049859   0.072020
+   80_20        0.048711   0.070289
+   90_10        0.047015   0.067584
+SVD_only        0.043671   0.063701
+
+=== Test-only (test_final): ranking rasio by ndcg_mean ===
+   ratio  precision_mean  ndcg_mean
+   90_10        1.482435   0.874213
+   80_20        1.625862   0.873886
+SVD_only        1.284287   0.873828
+   70_30        1.668469   0.872442
+   60_40        1.526456   0.870970
+   50_50        1.335489   0.868222
+   40_60        1.165389   0.865566
+   30_70        0.985890   0.862047
+   20_80        0.873414   0.857711
+   10_90        0.789574   0.852606
+
+Selesai. -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\metrics
+--- 4. compute_metrics.py selesai (124.7s) ---
+
+======================================================================
+>>> 5. build_segments.py
+======================================================================
+Fold 0: {'regular': 650, 'new': 161, 'trend': 132}
+Fold 1: {'regular': 651, 'new': 158, 'trend': 134}
+Fold 2: {'regular': 648, 'new': 160, 'trend': 135}
+Fold 3: {'regular': 648, 'new': 160, 'trend': 135}
+Fold 4: {'regular': 649, 'new': 156, 'trend': 138}
+Fold 5: {'regular': 655, 'new': 153, 'trend': 135}
+Fold 6: {'regular': 658, 'new': 146, 'trend': 139}
+Fold 7: {'regular': 663, 'new': 141, 'trend': 139}
+Fold 8: {'regular': 663, 'new': 141, 'trend': 139}
+Fold 9: {'regular': 664, 'new': 141, 'trend': 138}
+
+Selesai. 9430 baris -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\segmentation\user_segments.csv
+segment
+regular    0.694486
+new        0.160870
+trend      0.144645
+Name: proportion, dtype: float64
+--- 5. build_segments.py selesai (1.9s) ---
+
+======================================================================
+>>> 6. user_sensitivity.py
+======================================================================
+Fold 0: ratio x segment selesai
+Fold 1: ratio x segment selesai
+Fold 2: ratio x segment selesai
+Fold 3: ratio x segment selesai
+Fold 4: ratio x segment selesai
+Fold 5: ratio x segment selesai
+Fold 6: ratio x segment selesai
+Fold 7: ratio x segment selesai
+Fold 8: ratio x segment selesai
+Fold 9: ratio x segment selesai
+
+=== Rasio terbaik per segmen (test-only, test_final, by ndcg_mean) ===
+  new     : rasio terbaik = 90_10 (ndcg_mean=0.9254)
+  trend   : rasio terbaik = 80_20 (ndcg_mean=0.9155)
+  regular : rasio terbaik = 90_10 (ndcg_mean=0.8559)
+
+=== Kombinasi dengan beda sensitivitas antar segmen signifikan (friedman_p < 0.05) ===
+   protocol      split    metric sensitivity_type  n_folds_used  friedman_p
+fullcatalog        n/a  coverage            slope            10    0.000371
+fullcatalog        n/a  coverage            range            10    0.000371
+fullcatalog        n/a      ndcg            slope            10    0.045049
+fullcatalog        n/a      ndcg            range            10    0.007447
+fullcatalog        n/a    recall            range            10    0.024724
+   testonly test_final  coverage            slope            10    0.000045
+   testonly test_final  coverage            range            10    0.000045
+   testonly test_final        f1            slope            10    0.000045
+   testonly test_final        f1            range            10    0.000045
+   testonly test_final      ndcg            slope            10    0.008230
+   testonly test_final precision            slope            10    0.000371
+   testonly test_final precision            range            10    0.000371
+   testonly test_final    recall            slope            10    0.000225
+   testonly test_final    recall            range            10    0.000045
+   testonly  val_inner  coverage            slope            10    0.000045
+   testonly  val_inner  coverage            range            10    0.000045
+   testonly  val_inner        f1            slope            10    0.000045
+   testonly  val_inner        f1            range            10    0.000045
+   testonly  val_inner       mae            range            10    0.027324
+   testonly  val_inner      ndcg            slope            10    0.000553
+   testonly  val_inner      ndcg            range            10    0.002243
+   testonly  val_inner precision            slope            10    0.000371
+   testonly  val_inner precision            range            10    0.000371
+   testonly  val_inner    recall            slope            10    0.000371
+   testonly  val_inner    recall            range            10    0.000045
+   testonly  val_inner      rmse            range            10    0.024724
+
+Catatan: n=10 fold adalah sampel kecil -- baca mean/std sensitivitas (effect size) di
+C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\sensitivity\sensitivity_significance_test.csv berdampingan dengan p-value, jangan cuma p-value.
+
+Selesai. -> C:\Users\riacl\Documents\Daily Goals\Semester 3\New Experiment\Clean Project\results\sensitivity
+--- 6. user_sensitivity.py selesai (163.0s) ---
+
+Pipeline selesai penuh dalam 5909.3s.
