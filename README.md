@@ -28,7 +28,13 @@ SVD++ is used as the personalized recommendation component. It learns latent rep
 
 ### DecayPop
 
-DecayPop provides a time-aware popularity signal. Recent interactions receive greater influence than older interactions, allowing the popularity component to reflect changing user interests and trends over time.
+DecayPop provides a time-aware popularity signal. Recent interactions receive
+greater influence than older interactions, allowing the popularity component
+to reflect changing user interests and trends over time.
+
+![DecayPop time-aware popularity](results/fig_decaypop_trend.png)
+
+*Figure 2. Time-aware popularity modelling using DecayPop.*
 
 ### Hybrid Recommendation
 
@@ -159,15 +165,22 @@ These configurations are evaluated to identify how changes in the personalizatio
 
 ## 8. User Segmentation
 
-The experiment also investigates whether different types of users respond differently to changes in the hybrid ratio.
+The experiment also investigates whether different types of users respond
+differently to changes in the hybrid ratio.
 
 Three user segments are evaluated:
 
-* **New Users**
-* **Regular Users**
-* **Trend-Followers**
+- **New Users**
+- **Regular Users**
+- **Trend-Followers**
 
-Sensitivity analysis is used to examine whether the effect of changing the SVD++ and DecayPop weights is consistent across these segments.
+Sensitivity analysis is used to examine whether the effect of changing the
+SVD++ and DecayPop weights is consistent across these segments.
+
+![User-segment sensitivity](results/fig_user_segment_sensitivity.png)
+
+*Figure 1. Sensitivity of recommendation performance to hybrid-ratio changes
+across user segments.*
 
 ---
 
