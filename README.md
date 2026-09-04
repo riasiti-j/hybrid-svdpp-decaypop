@@ -4,7 +4,7 @@ A hybrid recommendation system that combines personalized recommendation using *
 
 This repository contains the experimental implementation for the research project:
 
-**Ria Siti Juairiah, Teguh Bharata Adji, and Igi Ardiyanto, “Analyzing the Popularity–Personalization Trade-off in a Hybrid SVD++–DecayPop Recommendation System.”**
+> **Ria Siti Juairiah, Teguh Bharata Adji, and Igi Ardiyanto, “Analyzing the Popularity–Personalization Trade-off in a Hybrid SVD++–DecayPop Recommendation System.”**
 
 This work investigates a hybrid recommendation framework that combines **personalized collaborative filtering using SVD++** with **time-aware popularity modeling using DecayPop**. The study analyzes how different hybridization ratios affect recommendation accuracy, catalogue coverage, and popularity-related characteristics across different user segments.
 
